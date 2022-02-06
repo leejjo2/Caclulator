@@ -25,7 +25,7 @@
 //		buttonPanel.setLayout(new GridLayout(4,  4,  10,  10));
 //		buttonPanel.setBounds(8,  90,  270,  235);
 //		
-//		String button_names[] = { "C", "¡À", "¡¿", "£½", "7", "8", "9", "+", "4", "5", "6", "-", "1", "2", "3", "0"};
+//		String button_names[] = { "C", "ï¿½ï¿½", "ï¿½ï¿½", "ï¿½ï¿½", "7", "8", "9", "+", "4", "5", "6", "-", "1", "2", "3", "0"};
 //		JButton buttons[] = new JButton[button_names.length];
 //		
 //		for (int i = 0; i < button_names.length; i++) {
@@ -45,7 +45,7 @@
 //		add(buttonPanel);
 //	
 //		
-//		setTitle("°è»ê±â");
+//		setTitle("ï¿½ï¿½ï¿½ï¿½");
 //		setVisible(true);
 //		setSize(300, 370);
 //		setLocationRelativeTo(null);
@@ -89,12 +89,14 @@ public class Calculator extends Frame {
 	String specialButtonText[] = { "Backspc", "C", "CE" };
 
 	MyDigitButton digitButton[] = new MyDigitButton[digitButtonText.length];
+	
 	MyOperatorButton operatorButton[] = new MyOperatorButton[operatorButtonText.length];
 	MyMemoryButton memoryButton[] = new MyMemoryButton[memoryButtonText.length];
 	MySpecialButton specialButton[] = new MySpecialButton[specialButtonText.length];
 
 	Label displayLabel = new Label("0", Label.RIGHT);
-	Label memLabel = new Label(" ", Label.RIGHT);
+	Label memLabel = new Label(" ", Label.RIGHT); 
+	
 
 	final int FRAME_WIDTH = 325, FRAME_HEIGHT = 325;
 	final int HEIGHT = 30, WIDTH = 30, H_SPACE = 10, V_SPACE = 10;
